@@ -1,0 +1,30 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span>Add Product</span>
+        <span class="example-spacer"></span>
+    </mat-toolbar-row>
+</mat-toolbar>
+<!--   
+  <router-outlet></router-outlet> -->
+<div class="container">
+    <div class="row justify-content-center">
+
+        <div class="col-lg-6 mt-3" style="background-color: white;padding: 10px;">
+            <form [formGroup]="ProductForm" (ngSubmit)="save()">
+                    
+                  <mat-form-field appearance="standard" [style.width]="'100%'">
+                    <mat-label>Product Name</mat-label>
+                    <input matInput placeholder="Enter Product Name" formControlName="ProductName">
+                  </mat-form-field>
+                    
+                  <mat-form-field appearance="standard" [style.width]="'100%'">
+                    <mat-label>Price</mat-label>
+                    <input matInput placeholder="Enter Price" type="number" formControlName="ProductPrice">
+                  </mat-form-field>
+
+                  <button type="submit" mat-raised-button color="accent" [disabled]="!ProductForm.valid" [style.width]="'100%'">Add Product</button>
+            </form>
+            
+        </div>
+    </div>
+</div>

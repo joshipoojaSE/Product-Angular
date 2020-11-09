@@ -1,0 +1,28 @@
+.example-icon {
+  padding: 0 14px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.mat-expansion-panel-header-description {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.example-button-row .mat-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.material-icons{
+padding: 0 10px;
+}
+
+.table{
+font-family: sans-serif;
+letter-spacing: 1.1px;
+}
+
+button a{
+text-decoration: none;
+color: inherit;
+}
